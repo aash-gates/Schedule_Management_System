@@ -1,97 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .taskbar {
-    width: 99%;
-    height: 60px;
-    background-color: #1E1E1E;
-    position: fixed;
-    top: 0; /* changed from "bottom" to "top" */
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    z-index: 999;
-  }
-  
-  .start-menu {
-    display: flex;
-    align-items: center;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .start-menu img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  
-  .datetime {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-  
-  .date, .time, .day {
-    font-size: 16px;
-    line-height: 1;
-  }
+  background-color: #1c1c1c;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
 
-  .schedule-text {
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-weight: bold;
-    flex: 1;
-    text-align: center;
-  }
-  
+.start-button {
+  width: 40px;
+  height: 40px;
+  background-image: url(icons/start-menu.png);
+  background-size: 100% 100%;
+}
 
-  
-  .task-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .task-icons img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  .system-tray {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .system-tray img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  .schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  .schedule-table th,
-  .schedule-table td {
-    padding: 20px;
-    border: 1px solid #0877f6;
-    text-align: left;
-  }
-  
-  .schedule-table th {
-    background-color: #c8f7d0;
-  }
-  
-  .schedule-table tr:nth-child(even) {
-    background-color: #81ace9;
-  }
-  
+.task-icons {
+  display: flex;
+  align-items: center;
+}
+
+.task-icon {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+.task-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.clock {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.date {
+  font-size: 14px;
+}
+
+.schedule {
+  margin: 20px;
+}
+
+.schedule-header {
+  display: flex;
+  align
+}
