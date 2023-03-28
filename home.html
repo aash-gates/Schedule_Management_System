@@ -5,20 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="taskbar">
-		<!-- First taskbar object -->
-		<div class="taskbar-object">
-			<span class="taskbar-icon"></span>
-			<span class="taskbar-text">Taskbar Object 1</span>
-			<span class="taskbar-time"></span>
-		</div>
-
-		<!-- Second taskbar object -->
-		<div class="taskbar-object">
-			<span class="taskbar-icon"></span>
-			<span class="taskbar-text">Taskbar Object 2</span>
-			<span class="taskbar-time"></span>
-		</div>
+	<div id="task-bar">
+    <div id="blur-overlay"></div>
+    <div id="menu-button"></div>
+    <div id="pined-items">
+      <div id="iexplore" class="pined-icon iexplore"></div>
+    </div>
+    <div id="datetime">
+      <span class="time"></span>
+      <span class="date"></span>
+    </div>
 
 		<!-- Today's date with buttons to navigate to other pages -->
 		<div class="date-nav">
