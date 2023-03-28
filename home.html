@@ -1,65 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Taskbar and Schedule</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="taskbar">
-      <div class="start-button"></div>
-      <div class="task-icons">
-        <div class="task-icon"><img src="icons/file-explorer.png"></div>
-        <div class="task-icon"><img src="icons/chrome.png"></div>
-        <div class="task-icon"><img src="icons/word.png"></div>
-        <div class="task-icon"><img src="icons/powerpoint.png"></div>
-        <div class="task-icon"><img src="icons/excel.png"></div>
-      </div>
-      <div class="clock">
-        <div class="time"></div>
-        <div class="date"></div>
-      </div>
-    </div>
-    <div class="schedule">
-      <div class="schedule-header">
-        <div class="schedule-date"></div>
-        <div class="schedule-nav">
-          <button id="previous-day">Previous</button>
-          <button id="next-day">Next</button>
-        </div>
-      </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Description</th>
-            <th>Location</th>
-            <th>Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Meeting with John</td>
-            <td>Conference Room A</td>
-            <td>9:00 AM</td>
-          </tr>
-          <tr>
-            <td>Lunch with Sarah</td>
-            <td>Cafeteria</td>
-            <td>12:00 PM</td>
-          </tr>
-          <tr>
-            <td>Phone call with Mark</td>
-            <td>Office</td>
-            <td>2:00 PM</td>
-          </tr>
-          <tr>
-            <td>Team meeting</td>
-            <td>Conference Room B</td>
-            <td>4:00 PM</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <script src="script.js"></script>
-  </body>
+<head>
+	<title>Taskbar Example</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="taskbar">
+		<!-- First taskbar object -->
+		<div class="taskbar-object">
+			<span class="taskbar-icon"></span>
+			<span class="taskbar-text">Taskbar Object 1</span>
+			<span class="taskbar-time"></span>
+		</div>
+
+		<!-- Second taskbar object -->
+		<div class="taskbar-object">
+			<span class="taskbar-icon"></span>
+			<span class="taskbar-text">Taskbar Object 2</span>
+			<span class="taskbar-time"></span>
+		</div>
+
+		<!-- Today's date with buttons to navigate to other pages -->
+		<div class="date-nav">
+			<span class="current-date"></span>
+			<button class="prev-page">Previous</button>
+			<button class="next-page">Next</button>
+		</div>
+
+		<!-- Iframe to load the tables -->
+		<iframe id="table-frame" src="table.1.html"></iframe>
+	</div>
+
+	<script src="script.js"></script>
+</body>
 </html>

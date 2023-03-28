@@ -1,61 +1,46 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
+/* Taskbar styles */
 .taskbar {
-  background-color: #1c1c1c;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.start-button {
-  width: 40px;
-  height: 40px;
-  background-image: url(icons/start-menu.png);
-  background-size: 100% 100%;
+.taskbar-object {
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
 }
 
-.task-icons {
-  display: flex;
-  align-items: center;
+.taskbar-icon {
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	margin-right: 5px;
+	border-radius: 50%;
 }
 
-.task-icon {
-  width: 32px;
-  height: 32px;
-  margin-left: 10px;
+.taskbar-text {
+	font-size: 16px;
 }
 
-.task-icon img {
-  width: 100%;
-  height: 100%;
+.taskbar-time {
+	margin-left: 20px;
+	font-size: 16px;
 }
 
-.clock {
-  color: #ffffff;
-  display: flex;
-  align-items: center;
+.date-nav {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
 }
 
-.time {
-  font-size: 16px;
-  font-weight: bold;
-  margin-right: 5px;
-}
-
-.date {
-  font-size: 14px;
-}
-
-.schedule {
-  margin: 20px;
-}
-
-.schedule-header {
-  display: flex;
-  align
+.current-date {
+	font
 }
